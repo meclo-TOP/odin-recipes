@@ -2,6 +2,7 @@ html {
     box-sizing: border-box;
     background-color: #E0C9a6;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
 }
 .title {
     background-color:#ffff0050;
@@ -33,32 +34,57 @@ html {
 a {
     color: cadetblue;
 }
+.homerow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    gap: 32px;
+    margin-right: 40px;
+    margin-left: 16px;
+}
 
-img {
-    display:block;
-    height: 485px;
-    width: 600px;
-    margin-left: 635px;
-    border: solid white;
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    border: solid 4px;
+    flex-wrap: wrap;
 }
-.recipe-title {
-    width: fit-content;
-    margin: auto;
+
+.container img {
+    border: solid #ffff6b9d;
+    align-self: center;
 }
-.description{
+
+.container div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    flex: 1;
+}
+.description {
     border: solid lightcoral;
-    margin-top: -490px;
+    padding: 10px;
+    font-size: 30px;
+    min-width: 450px;
 }
 .ingredients {
-border: solid darkcyan;
-}
-.description, .ingredients {
-    width: 600px;
-    padding: 15px;
-    font-size: 18px;
+    border: solid darkcyan;
+    padding: 10px;
+    max-width:300px;
+    flex: 0;
+    flex-grow: 0;
+    min-width: 222px;
 }
 .directions {
-    width: 1235px;
-    border: solid;
-    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: solid 4px;
+}
+.outer-container {
+    display: flex;
+    flex-direction: column;
 }
